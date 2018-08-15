@@ -9,7 +9,7 @@ class Projects extends Component {
     <div class="about">
       <div class="card">
             <div class="cardheader">
-              <p> I am a data analyst turned software engineer. My background in data analytics and business intelligence has taught me to be organized and thorough, and to persevere in intense situations, while my positive demeanor and zeal help give focus to and energize the people around me. </p>
+              <h4> I am a data analyst turned software engineer. My background in data analytics and business intelligence has taught me to be organized and thorough, and to persevere in intense situations, while my positive demeanor and zeal help give focus to and energize the people around me. </h4>
             </div>
             <hr />
             <div class="cardcontent">
