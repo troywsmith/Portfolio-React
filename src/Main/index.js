@@ -1,33 +1,30 @@
 import React, { Component } from "react";
 import "../style.css";
 
+//Bootstrap Components
+import { Tabs, Tab } from 'react-bootstrap';
+
 //components
 
-class Main extends Component {
+class TabBar extends Component {
+
   render() {
     return (
-    
-      <div class="page">
-        <div class="content">
-          <div class="contentheader">
-            <img src="data:image/png;base64,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"/>
-            <h5 class="role">General Assembly | Full Stack Web Development</h5>
-          </div>
-          <div class="contentcontent">
-            <p class="roledescription">12 week-long boot camp dedicated to preparing students to think like engineers and approach problems creatively
-                in order to build the next generation of web applications and digital products</p>
-            <ul class="description">
-              <li>Designed and developed a peer-to-peer cryptocurrency payment web application using Node.js/Express and PostgreSQL</li>
-              <li>Collaborated with teammates to create a group trip web  application  using React,  Express, and deployed on Heroku</li>
-              <li>Created an arcade website that consists of games developed using HTML, CSS, and jQuery for DOM manipulation</li>
-            </ul>
-            <p class="timelocation">April 2018 - July 2018 | New York, NY</p>
-          </div>
-        </div>
+      <div className="page">
+        <Tabs defaultActiveKey={2} id="uncontrolled-tab-example" className="tabs">
+          <Tab eventKey={1} title="About" className="tab">
+            <p> I am a data analyst turned software engineer. My background in data analytics and business intelligence has taught me to be organized and thorough, and to persevere in intense situations, while my positive demeanor and zeal help give focus to and energize the people around me. </p>
+          </Tab>
+          <Tab eventKey={2} title="Experience" className="tab">
+            My Experience
+          </Tab>
+          <Tab eventKey={3} title="Projects" className="tab">
+            My Projects
+          </Tab>
+        </Tabs>
       </div>
-  
     )
   }
 }
 
-export default Main;
+export default TabBar;
