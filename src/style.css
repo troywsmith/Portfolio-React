@@ -10,6 +10,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 30%;
+  max-width: 350px;
   margin: auto;
   text-align: center;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -109,13 +110,18 @@ input[type=submit]:hover {
 .tabs ul {
   display: inline-block; 
   padding: 0px 100px;
+  width: 100%;
+}
+
+.tabs ul > li {
+  width: 33%;
 }
 
 /* Inactive tab */
 .tabs ul > li > a {
   background-color: white;
   color: black;
-  text-align: left;
+  text-align: center;
 }
 .tabs ul > li > a:hover {
   background-color: pink;
@@ -125,8 +131,8 @@ input[type=submit]:hover {
 .tabs ul > li.active > a,
 .tabs ul > li.active > a:hover,
 .tabs ul > li.active > a:focus {
-  /* background-color: blue; */
-  color: gray;
+  border-bottom: black;
+  border-bottom-style: solid;
 }
 
 /* Disabled tab */
@@ -135,6 +141,10 @@ input[type=submit]:hover {
   color: darkgray;
 }
 
+.tab {
+  width: 80%;
+  margin: auto;
+}
 
 
 
@@ -180,4 +190,79 @@ input[type=submit]:hover {
 .contentheader img {
   height: 100px;
   max-width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section {
+  text-align: left
+}
+
+.card {
+  width: 85%;
+  background: white;
+  padding: 30px;
+  margin: 50px auto;
+}
+
+.cardheader {
+  display: flex;
+}
+
+.cardheader h4 {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.cardheader a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 205);
+}
+
+.cardheader a:hover {
+  color: rgb(103, 103, 252);
+}
+
+.cardheader img {
+  height: 100px;
+  max-width: 200px;
+}
+
+.roledescription {
+  font-style: italic;
+}
+
+.descriptiondiv {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.skill {
+  text-align: center;
+  margin: 20px;
+}
+
+.skillpic {
+  width: 100px;
+  height: 80px;
+}
+
+@media screen and (min-width: 1000px) {
+  .card {
+    width: 800px;
+  }
+  .about {
+    width: 800px;
+  }
 }

@@ -5,7 +5,9 @@ import "../style.css";
 import { Tabs, Tab } from 'react-bootstrap';
 
 //components
-
+import Skills from '../Skills';
+import About from '../About';
+import Projects from '../Projects';
 
 class TabBar extends Component {
   // constructor() {
@@ -35,16 +37,15 @@ class TabBar extends Component {
   render() {
     return (
       <div className="page">
-        <Tabs defaultActiveKey={2} id="uncontrolled-tab-example" className="tabs">
+        <Tabs defaultActiveKey={1} id="uncontrolled-tab-example" className="tabs">
           <Tab eventKey={1} title="About" className="tab">
-            <p> I am a data analyst turned software engineer. My background in data analytics and business intelligence has taught me to be organized and thorough, and to persevere in intense situations, while my positive demeanor and zeal help give focus to and energize the people around me. </p>
+            <About />
           </Tab>
           <Tab eventKey={2} title="Skills" className="tab">
-            My Skills
-            {/* {this.state.skills} */}
+            <Skills />
           </Tab>
           <Tab eventKey={3} title="Projects" className="tab">
-            My Projects
+            <Projects />
           </Tab>
         </Tabs>
       </div>
