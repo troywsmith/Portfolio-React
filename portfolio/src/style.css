@@ -1,0 +1,102 @@
+body {
+  background: #f1f1f1;
+  font-family: Source Sans Pro;
+}
+
+
+
+/* Sidebar  */
+.sidebar {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.sidebar .title {
+  color: grey;
+  font-size: 18px;
+}
+
+.sidebar img {
+  width: 50%;
+  border-radius: 100px;
+}
+
+.sidebar button {
+  border: none;
+  border-radius: 10px;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 70%;
+  font-size: 18px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.sidebar button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
+
+/* Main Page Area  */
+
+.page {
+  display: block;
+  /* float: left; */
+  margin-left: 30%;
+  width: 70%;
+}
+
+.content {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.contentheader {
+  display: flex;
+}
+
+.contentheader h4 {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.contentheader a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 205);
+}
+
+.contentheader a:hover {
+  color: rgb(103, 103, 252);
+}
+
+.contentheader img {
+  height: 100px;
+  max-width: 200px;
+}
