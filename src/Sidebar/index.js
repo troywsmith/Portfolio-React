@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../style.css";
 
 //components
+import Contact from '../Contact';
 
 class Sidebar extends Component {
   render() {
@@ -25,7 +26,7 @@ class Sidebar extends Component {
         <i className="fa fa-facebook"></i>
       </a>
       <p>
-        <button>Contact</button>
+      <Contact />
       </p>
     </div>
   
