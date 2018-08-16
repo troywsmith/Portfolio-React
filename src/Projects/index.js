@@ -30,26 +30,22 @@ class Projects extends Component {
 
     const crypicoPopover = (
       <Popover id="popover-trigger-hover-focus" title="Crypico">
-        <strong>Crypico</strong> 
-        Check this info.
+        Freelance cryptocurrency marketplace
       </Popover>
     );
     const marketbarkerPopover = (
       <Popover id="popover-trigger-hover-focus" title="MarketBarker">
-        <strong>MarketBarker</strong> 
-        Check this info.
+        Cryptocurrency news blog
       </Popover>
     );
     const swapPopover = (
       <Popover id="popover-trigger-hover-focus" title="Swap.">
-        <strong>Swap App</strong> 
-        Check this info.
+        Cryptocurrency exchange platform powered by SWAP tokens
       </Popover>
     );
     const tripifyPopover = (
       <Popover id="popover-trigger-hover-focus" title="Tripify">
-        <strong>Tripify</strong> 
-        Check this info.
+        App to help friends get prepared for an outing
       </Popover>
     );
 
@@ -57,15 +53,15 @@ class Projects extends Component {
     return (
       <div className="section" className="projects">
       
-        <div>
-          <h2> Highlighted Projects </h2>
+        <h2> Highlighted Projects </h2>
+        <div className="highlighted-projects">
           <OverlayTrigger
             trigger={['hover', 'focus']}
             placement="bottom"
             overlay={crypicoPopover}
           >
             <a href="https://crypico.com/">
-              <img className="skill-pic" src="https://www.ryanmahaffey.com/static/crypicosquare.9d8294b7.png" />
+              <img className="project-pic" src="https://www.ryanmahaffey.com/static/crypicosquare.9d8294b7.png" />
             </a>
           </OverlayTrigger>
           <OverlayTrigger
@@ -74,7 +70,7 @@ class Projects extends Component {
             overlay={marketbarkerPopover}
           >
             <a href="https://marketbarker.com/">
-              <img className="skill-pic" src="https://www.ryanmahaffey.com/static/SquareMBLogo.136780e6.png" />
+              <img className="project-pic" src="https://www.ryanmahaffey.com/static/SquareMBLogo.136780e6.png" />
             </a>
           </OverlayTrigger>
           <OverlayTrigger
@@ -83,7 +79,7 @@ class Projects extends Component {
             overlay={swapPopover}
           >
             <a href="https://swaptokens.herokuapp.com/"> 
-              <img className="skill-pic" src="http://www.localseowebdesign.com/image/cache/catalog/Image%20Swap%20Service-480x480.png" />
+              <img className="project-pic" src="http://www.localseowebdesign.com/image/cache/catalog/Image%20Swap%20Service-480x480.png" />
             </a>
           </OverlayTrigger>
           <OverlayTrigger
@@ -92,7 +88,7 @@ class Projects extends Component {
             overlay={tripifyPopover}
           >
             <a href="https://tripifyy.herokuapp.com/">
-              <img className="skill-pic" src="http://images.clipartpanda.com/camping-tent-clipart-black-and-white-orange-tent-hi.png" />
+              <img className="project-pic" src="http://images.clipartpanda.com/camping-tent-clipart-black-and-white-orange-tent-hi.png" />
             </a>
           </OverlayTrigger>
         </div>
@@ -110,9 +106,9 @@ class Projects extends Component {
             <hr />
             <div>
               <div className="project-details">
-                <p> {project.description} </p>
-                <p> {project.language} </p>
-                <p> {project.updated_at} </p>
+                <p> Description: {project.description} </p>
+                <p> Most used language: {project.language} </p>
+                <p> Last update: {project.updated_at} </p>
                 {project.homepage ?
                 <a href={project.homepage}>Live App</a>
                 : null
@@ -122,48 +118,6 @@ class Projects extends Component {
           </div>
           )
           })}
-
-        <div className="card">
-          <div className="cardheader">
-            <img src="http://images.clipartpanda.com/camping-tent-clipart-black-and-white-orange-tent-hi.png" />
-            <h4> Tripify </h4>
-          </div>
-          <hr />
-          <div className="cardcontent">
-            <ul className="description">
-              <li>
-                <a href="https://tripifyy.herokuapp.com/"> Live App </a>
-              </li>
-              <li>
-                <a href="https://github.com/troywsmith/Tripify">
-                  
-                  GitHub Repo
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="cardheader">
-            <img src="http://www.localseowebdesign.com/image/cache/catalog/Image%20Swap%20Service-480x480.png" />
-            <h4> Swap. </h4>
-          </div>
-          <hr />
-          <div className="cardcontent">
-            <ul className="description">
-              <li>
-                <a href="https://swaptokens.herokuapp.com/"> Live App </a>
-              </li>
-              <li>
-                <a href="https://github.com/troywsmith/GA-Project-2">
-                  
-                  GitHub Repo
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
 
       </div>
     );
