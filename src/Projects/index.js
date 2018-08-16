@@ -30,22 +30,26 @@ class Projects extends Component {
 
     const crypicoPopover = (
       <Popover id="popover-trigger-hover-focus" title="Crypico">
-        <strong>Crypico</strong> Check this info.
+        <strong>Crypico</strong> 
+        Check this info.
       </Popover>
     );
     const marketbarkerPopover = (
       <Popover id="popover-trigger-hover-focus" title="MarketBarker">
-        <strong>MarketBarker</strong> Check this info.
+        <strong>MarketBarker</strong> 
+        Check this info.
       </Popover>
     );
     const swapPopover = (
       <Popover id="popover-trigger-hover-focus" title="Swap.">
-        <strong>Swap App</strong> Check this info.
+        <strong>Swap App</strong> 
+        Check this info.
       </Popover>
     );
     const tripifyPopover = (
       <Popover id="popover-trigger-hover-focus" title="Tripify">
-        <strong>Tripify</strong> Check this info.
+        <strong>Tripify</strong> 
+        Check this info.
       </Popover>
     );
 
@@ -60,29 +64,36 @@ class Projects extends Component {
             placement="bottom"
             overlay={crypicoPopover}
           >
-            <img className="skill-pic" src="https://www.ryanmahaffey.com/static/crypicosquare.9d8294b7.png" />
+            <a href="https://crypico.com/">
+              <img className="skill-pic" src="https://www.ryanmahaffey.com/static/crypicosquare.9d8294b7.png" />
+            </a>
           </OverlayTrigger>
           <OverlayTrigger
             trigger={['hover', 'focus']}
             placement="bottom"
             overlay={marketbarkerPopover}
           >
-            <img className="skill-pic" src="https://www.ryanmahaffey.com/static/SquareMBLogo.136780e6.png
-" />
+            <a href="https://marketbarker.com/">
+              <img className="skill-pic" src="https://www.ryanmahaffey.com/static/SquareMBLogo.136780e6.png" />
+            </a>
           </OverlayTrigger>
           <OverlayTrigger
             trigger={['hover', 'focus']}
             placement="bottom"
             overlay={swapPopover}
           >
-            <img className="skill-pic" src="http://www.localseowebdesign.com/image/cache/catalog/Image%20Swap%20Service-480x480.png" />
+            <a href="https://swaptokens.herokuapp.com/"> 
+              <img className="skill-pic" src="http://www.localseowebdesign.com/image/cache/catalog/Image%20Swap%20Service-480x480.png" />
+            </a>
           </OverlayTrigger>
           <OverlayTrigger
             trigger={['hover', 'focus']}
             placement="bottom"
             overlay={tripifyPopover}
           >
-            <img className="skill-pic" src="http://images.clipartpanda.com/camping-tent-clipart-black-and-white-orange-tent-hi.png" />
+            <a href="https://tripifyy.herokuapp.com/">
+              <img className="skill-pic" src="http://images.clipartpanda.com/camping-tent-clipart-black-and-white-orange-tent-hi.png" />
+            </a>
           </OverlayTrigger>
         </div>
 
@@ -112,7 +123,7 @@ class Projects extends Component {
           )
           })}
 
-        {/* <div className="card">
+        <div className="card">
           <div className="cardheader">
             <img src="http://images.clipartpanda.com/camping-tent-clipart-black-and-white-orange-tent-hi.png" />
             <h4> Tripify </h4>
@@ -153,27 +164,6 @@ class Projects extends Component {
             </ul>
           </div>
         </div>
-
-        <div className="card">
-          <div className="cardheader">
-            <img src="https://lol.garena.com/playnow/arcade2016/images/locale/en_US/logo.png" />
-            <h4> Troy 's Arcade</h4>
-          </div>
-          <hr />
-          <div className="cardcontent">
-            <ul className="description">
-              <li>
-                <a href="https://troywsmith.github.io/Arcade/"> Live App </a>
-              </li>
-              <li>
-                <a href="https://github.com/troywsmith/GA-Project-1">
-                  
-                  GitHub Repo
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div> */}
 
       </div>
     );
