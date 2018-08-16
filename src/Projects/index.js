@@ -43,6 +43,11 @@ class Projects extends Component {
               <p> {project.description} </p>
               <p> {project.language} </p>
               <p> {project.updated_at} </p>
+              {project.homepage ?
+              <a href={project.homepage}> Live App</a>
+              : null
+              }
+              
             </div>
           </div>
         </div>
