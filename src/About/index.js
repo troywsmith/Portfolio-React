@@ -6,14 +6,14 @@ class Projects extends Component {
   render() {
     return (
 
-    <div class="about">
-      <div class="card">
-            <div class="cardheader">
+    <div className="about">
+      <div className="card">
+            <div className="cardheader">
               <h4> I am a data analyst turned software engineer. My background in data analytics and business intelligence has taught me to be organized and thorough, and to persevere in intense situations, while my positive demeanor and zeal help give focus to and energize the people around me. </h4>
             </div>
             <hr />
-            <div class="cardcontent">
-              <div class='socialmediawidgets'>
+            <div className="cardcontent">
+              <div className='socialmediawidgets'>
                 <a href="https://www.linkedin.com/in/troy-w-smith/">
                   <img title="GitHub" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin.png" width="35"
                     height="35" />

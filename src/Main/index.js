@@ -10,29 +10,6 @@ import About from '../About';
 import Projects from '../Projects';
 
 class TabBar extends Component {
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     skills: [],
-  //   }
-  // }
-
-  // componentDidMount() {
-  //   fetch('https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77skuuj7fsupi2&redirect_uri=http://localhost:3000/%2Fauth%2Flinkedin&tate=DCEeFWf45A53sdfKef424&scope=r_basicprofile')
-  //   .then(results => {
-  //     return results.json();
-  //   }).then(data => {
-  //     let skills = data.results.map( (skill) => {
-  //       return (
-  //         <div key={skill.results}>
-  //           <p> {skill.skill} </p>
-  //         </div>
-  //       )
-  //     })
-  //     this.setState({skills: skills});
-  //     console.log("state", this.state.skills);
-  //   })
-  // }
 
   render() {
     return (
