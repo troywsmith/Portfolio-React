@@ -16,18 +16,6 @@ class Sidebar extends Component {
         <h1>Troy Smith</h1>
         <p className="title">Software Engineer</p>
         <p>New York, NY</p>
-        <a href="#">
-          <i className="fa fa-dribbble" />
-        </a>
-        <a href="#">
-          <i className="fa fa-twitter" />
-        </a>
-        <a href="#">
-          <i className="fa fa-linkedin" />
-        </a>
-        <a href="#">
-          <i className="fa fa-facebook" />
-        </a>
         <p>
           <Contact />
         </p>

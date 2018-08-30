@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 
-import { Button, OverlayTrigger, Popover } from 'react-bootstrap';
+import { OverlayTrigger, Popover } from 'react-bootstrap';
 
 
 class Projects extends Component {
@@ -51,8 +51,7 @@ class Projects extends Component {
 
 
     return (
-      <div className="section" className="projects">
-      
+      <div>
         <h2> Highlighted Projects </h2>
         <div className="highlighted-projects">
           <OverlayTrigger
@@ -61,7 +60,7 @@ class Projects extends Component {
             overlay={crypicoPopover}
           >
             <a href="https://crypico.com/">
-              <img className="project-pic" src="https://www.ryanmahaffey.com/static/crypicosquare.9d8294b7.png" />
+              <img className="project-pic" src="https://www.ryanmahaffey.com/static/crypicosquare.9d8294b7.png" alt="Crypico"/>
             </a>
           </OverlayTrigger>
           <OverlayTrigger
@@ -70,7 +69,7 @@ class Projects extends Component {
             overlay={marketbarkerPopover}
           >
             <a href="https://marketbarker.com/">
-              <img className="project-pic" src="https://www.ryanmahaffey.com/static/SquareMBLogo.136780e6.png" />
+              <img className="project-pic" src="https://www.ryanmahaffey.com/static/SquareMBLogo.136780e6.png" alt="MarketBarker"/>
             </a>
           </OverlayTrigger>
           <OverlayTrigger
@@ -79,7 +78,7 @@ class Projects extends Component {
             overlay={swapPopover}
           >
             <a href="https://swaptokens.herokuapp.com/"> 
-              <img className="project-pic" src="http://www.localseowebdesign.com/image/cache/catalog/Image%20Swap%20Service-480x480.png" />
+              <img className="project-pic" src="http://www.localseowebdesign.com/image/cache/catalog/Image%20Swap%20Service-480x480.png" alt="Swap"/>
             </a>
           </OverlayTrigger>
           <OverlayTrigger
@@ -88,13 +87,13 @@ class Projects extends Component {
             overlay={tripifyPopover}
           >
             <a href="https://tripifyy.herokuapp.com/">
-              <img className="project-pic" src="http://images.clipartpanda.com/camping-tent-clipart-black-and-white-orange-tent-hi.png" />
+              <img className="project-pic" src="http://images.clipartpanda.com/camping-tent-clipart-black-and-white-orange-tent-hi.png" alt="Tripifyy"/>
             </a>
           </OverlayTrigger>
         </div>
 
 
-        <h2> Other Work </h2>
+        <h2> Other Work on GitHub </h2>
         {this.state.projects.map( project => {
           return ( 
           <div className="card" key={project.id}>

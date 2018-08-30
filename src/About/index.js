@@ -20,7 +20,7 @@ class Projects extends Component {
               </h3>
               <h3>
                 Contact me at 
-                <a hred="mailto:troy@troywsmith.com"> troy@troywsmith.com </a> !!
+                <a href="mailto:troy@troywsmith.com"> troy@troywsmith.com</a> !!
               </h3>
             </div>
           </Typing>
